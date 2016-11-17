@@ -26,7 +26,7 @@ if(strpos($_SERVER['HTTP_HOST'],".dev") !== false or strpos($_SERVER['HTTP_HOST'
     define('DB_USER', 'landraddningen');
 
     /** MySQL-databasens lösenord */
-    define('DB_PASSWORD', 'v]1eP)Y4OS(2~w~C8U1c');
+    define('DB_PASSWORD', '');
 
     /** MySQL-server */
     define('DB_HOST', 'localhost');
@@ -48,7 +48,7 @@ else {
     define('DB_USER', 'root@l94355');
 
     /** MySQL-databasens lösenord */
-    define('DB_PASSWORD', 'hd6dfrai');
+    define('DB_PASSWORD', '');
 
     /** MySQL-server */
     define('DB_HOST', 'mysql462.loopia.se');
