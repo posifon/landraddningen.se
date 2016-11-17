@@ -1,0 +1,39 @@
+@import "variables.scss";
+@import "functions.scss";
+@import "mixins.scss";
+
+@media (min-width: $screen-sm) {
+  body {
+
+    #pageContent {
+      .storyBox {
+        height:350px;
+        border: none;
+        &.rightBorder {
+          @include border($position:right);
+        }
+        .storyImageContainer {
+          height: 90px;
+          img,
+          div.missingImg {
+            max-width:180px;
+            max-height:90px;
+            margin:auto;
+          }
+        }
+      }
+    }
+
+    #contactpersonauthorinfo {
+      margin-left: 20%;
+    }
+
+    #contactpersonauthorinfo {
+      margin-left:25%;
+    }
+
+    .printfriendly img {
+      width:50%;
+    }
+  }
+}

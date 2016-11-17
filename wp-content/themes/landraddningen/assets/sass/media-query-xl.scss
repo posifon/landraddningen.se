@@ -1,0 +1,37 @@
+@import "variables.scss";
+@import "functions.scss";
+@import "mixins.scss";
+
+@media (min-width: $screen-xl) {
+  body {
+    #homepageContainer {
+      min-height:800px;
+      @include background($color:transparent,$alpha:0,$position:center top,$sizeWidth:1200px,$sizeHeight:800px,$repeat:no-repeat,$origin:padding-box,$clip:border-box,$attachment:fixed,$image:"../img/bakgrunder/bg_stan_2_ny-1200x800-med_droppe.png");
+      margin:auto;
+      padding:0;
+      #homepageContent {
+        #homepageText {
+          padding-top: 375px;
+          padding-bottom: 0;
+        }
+      }
+      #puffar {
+        width:100%;
+        .puffBorderTop {
+          margin-top:10px;
+        }
+      }
+    }
+
+    #defaultContainer {
+      min-height:500px;
+      @include background($color:transparent,$alpha:0,$position:center top,$sizeWidth:1200px,$sizeHeight:800px,$repeat:no-repeat,$origin:padding-box,$clip:border-box,$attachment:fixed,$image:"../img/bakgrunder/bg_stan_2_ny-1200x800.png");
+      margin:auto;
+      padding:0;
+    }
+
+    #mainContent, .whiteopacity {
+      min-height:515px;
+    }
+  }
+}

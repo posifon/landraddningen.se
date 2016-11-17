@@ -1,0 +1,77 @@
+// --------------------------------------------------
+// Colors
+// --------------------------------------------------
+$defaultTextColor: rgb(0,0,0);
+$defaultBackgroundColor: rgb(25,25,25);
+$defaultLinkColor: rgb(0,0,0);
+$defaultLinkHoverColor: rgb(0,160,59);
+$defaultPlaceholderColor: rgb(153,153,153);
+
+$landraddningenPrimaryColor: rgb(190,208,0);
+$landraddningenLighterColor: rgb(131,187,38);
+$landraddningenDarkerColor: rgb(0,160,59);
+
+$mobileBackgroundColor: rgb(0,0,0);
+
+//$whiteopacityBackgroundFallbackColor: rgb(250,250,250);
+$whiteopacityBackgroundColor: rgb(255,255,255); //95% Alpha
+
+$homepageTextColor: rgb(255,255,255);
+$puffTextColor: rgb(255,255,255);
+$puffLinkColor: rgb(255,255,255);
+$puffLinkHoverColor: rgb(255,255,255);
+
+//$headerBackgroundFallbackColor: rgb(13,13,13);
+$headerBackgroundColor: rgb(0,0,0); //75% Alpha
+
+$primaryMenuLinkColor: rgb(255,255,255);
+//$primaryDropdownBackgroundFallbackColor: rgb(5,5,5);
+$primaryDropdownBackgroundColor: rgb(0,0,0);
+
+$footerTextColor: rgb(127,127,127);
+//$footerBackgroundFallbackColor: rgb(250,250,250);
+$footerBackgroundColor: rgb(0,0,0); //90% Alpha
+
+$errorMessageColor: rgb(220,0,0);
+$errorMessageBackgroundColor: rgb(100,0,0);
+$errorMessageColorWithBackground: rgb(255,255,255);
+
+// --------------------------------------------------
+// Font
+// --------------------------------------------------
+
+$defaultFont: 'Gotham A','Gotham B',Gotham,Georgia,serif;
+$defaultHeaderFont: 'Gotham A','Gotham B',Gotham,Helvetica,Georgia,serif;
+
+$defaultFontSize: 10pt;
+$smallFontSize: $defaultFontSize; //9pt;
+//$xsmallFont: 0.7em;
+
+// --------------------------------------------------
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Extra small screen / phone
+$screen-xs:                  480px;
+$screen-phone:               $screen-xs;
+
+// Small screen / tablet
+$screen-sm:                  768px;
+$screen-tablet:              $screen-sm;
+
+// Medium screen / desktop
+$screen-md:                  992px;
+$screen-desktop:             $screen-md;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px;
+$screen-lg-desktop:          $screen-lg;
+
+// Extra large screen / wide desktop
+$screen-xl:                  1900px;
+$screen-xl-desktop:          $screen-xl;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm - 1);
+$screen-sm-max:              ($screen-md - 1);
+$screen-md-max:              ($screen-lg - 1);

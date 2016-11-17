@@ -1,0 +1,213 @@
+@import "variables.scss";
+@import "functions.scss";
+@import "mixins.scss";
+
+@media (min-width: $screen-md) {
+  body {
+    @include background($color:$defaultBackgroundColor);
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.8em;
+    }
+    h3 {
+      font-size: 1.6em;
+    }
+    h4 {
+      font-size: 1.4em;
+    }
+    h5 {
+      font-size: 1.2em;
+    }
+    h6 {
+      font-size: 1em;
+    }
+
+    &#homepageBody {
+      overflow:auto;
+    }
+    #homepageContainer {
+      min-height:600px;
+      @include background($color:transparent,$alpha:0,$position:center top,$sizeWidth:970px,$sizeHeight:600px,$repeat:no-repeat,$origin:padding-box,$clip:border-box,$attachment:fixed,$image:"../img/bakgrunder/bg_stan_2_ny-970x600-med_droppe.png");
+      margin:auto;
+      padding:0;
+      #homepageContent {
+        margin-top: 0;
+        #homepageText {
+          @include text($type:text,$size:1.5em);
+          padding-top:160px;
+          padding-bottom:20px;
+        }
+      }
+    }
+
+    #defaultContainer {
+      min-height:400px;
+      @include background($color:transparent,$alpha:0,$position:center top,$sizeWidth:970px,$sizeHeight:600px,$repeat:no-repeat,$origin:padding-box,$clip:border-box,$attachment:fixed,$image:"../img/bakgrunder/bg_stan_2_ny-970x600.png");
+      margin:auto;
+      padding:0;
+    }
+
+    #mainContent, .whiteopacity {
+      min-height:350px;
+    }
+
+    #puffar {
+      padding: 0 25px 0 0;
+    }
+
+    header#mainHeader {
+      width:100%;
+      @include background($color:$headerBackgroundColor,$alpha:75);
+      margin: 0;
+      .navbar-header {
+        .navbar-brand {
+          padding:0;
+          #landraddningen_logo {
+            padding:5px;
+            margin: 30px 0 30px 30px;
+          }
+        }
+      }
+      nav#mainNavbar{
+        ul#menu-primary-navigation {
+          @include text($type:link,$transform:uppercase);
+          float: right;
+          padding: 25px 0 0 0;
+          li {
+            a {
+              padding: 10px 4px 34px 4px;
+              @include text($type:link,$transform:uppercase);
+              border: 0px;
+            }
+            &.open {
+              .dropdown-menu {
+                padding: 2px;
+                display:block;
+                border: 0px;
+                &:hover {
+                  display:block;
+                }
+              }
+            }
+            .dropdown-menu {
+              @include text($type:link,$transform:uppercase);
+              li {
+                a {
+                  padding: 2px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #pageContent {
+      .newsPost {
+        img {
+          display: inline-block;
+        }
+      }
+      // Nyhetsarkivsidan
+      ul#newsArchive {
+        ul {
+          padding-left: 40px;
+        }
+      }
+      #downloadAsPDF {
+        #pdfContainer {
+          #pdfText {
+            padding-top: 60px;
+            padding-right: 40px;
+          }
+        }
+      }
+
+      //Berättelsesidan
+      .storyBox {
+        height:380px;
+        .storyImageContainer {
+          height: 120px;
+          img,
+          div.missingImg {
+            max-width:240px;
+            max-height:120px;
+          }
+        }
+      }
+      #storyImageContainer {
+        img {
+          margin-bottom:20px;
+        }
+      }
+    }
+
+    #seminarMenu {
+      float:right;
+      //margin:0;
+    }
+    .avatar {
+      margin-top: 0px;
+      margin-right: 20px;
+    }
+
+    #contactpersonauthorinfo {
+      margin-left:35%;
+    }
+
+    .printfriendly img {
+      width:50%;
+    }
+
+    #puffar {
+      clear:left;
+    }
+
+    #footer {
+      #laddaNerAppen {
+        .laddaNerAppenImg {
+          width:24px;
+          height:29px;
+          display:inline-block;
+          vertical-align:middle;
+          margin: 0;
+          &.iPhone {
+            margin-left:0;
+          }
+          &.Android {
+            padding-top: 10px;
+          }
+        }
+        .laddaNerAppenText {
+          display:inline;
+          &.iPhone {
+            padding: 0 5px;
+          }
+          &.Android {
+            padding: 0 5px;
+          }
+        }
+      }
+      #socialaMedier {
+        div {
+          width:30px;
+          height:30px;
+          display:inline-block;
+          margin-top:5px;
+          &#Facebook {
+            margin-left:12px;
+          }
+        }
+      }
+    }
+
+    div#pageNav {
+      padding: 10px 100px;
+      span.noMobile {
+        display: inline-block;
+      }
+    }
+  }
+}

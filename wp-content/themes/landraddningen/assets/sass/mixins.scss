@@ -1,0 +1,106 @@
+@import "variables.scss";
+@import "functions.scss";
+
+@mixin color($type:text,$color:rgb(0,0,0),$alpha:0) {
+  @if $type == bg {
+    background-color: getColor($color,$alpha);
+  }
+  @else {
+    color:getColor($color,$alpha);
+  }
+}
+
+@mixin background($color:transparent,$alpha:0,$position:center center,$sizeVar:null,$sizeWidth:auto,$sizeHeight:auto,$repeat:no-repeat,$origin:padding-box,$clip:border-box,$attachment:scroll,$image:null) {
+  @if $color != transparent {
+    @include color($type:bg,$color:$color,$alpha:$alpha)
+  } @else {
+    background-color: $color;
+  }
+  @if $image != null {
+    background-position: $position;
+    @if $sizeVar != null {
+      /* Gecko 1.9.2 (Firefox 3.6) */
+      -moz-background-size: $sizeWidth $sizeHeight;
+      /* Opera 9.5 */
+      -o-background-size: $sizeWidth $sizeHeight;
+      /* Safari 3-4 */
+      -webkit-background-size: $sizeWidth $sizeHeight;
+      background-size: $sizeWidth $sizeHeight;
+    }
+    @else {
+      /* Gecko 1.9.2 (Firefox 3.6) */
+      -moz-background-size: $sizeVar;
+      /* Opera 9.5 */
+      -o-background-size: $sizeVar;
+      /* Safari 3-4 */
+      -webkit-background-size: $sizeVar;
+      background-size: $sizeVar;
+    }
+    background-repeat: $repeat;
+    -webkit-background-origin: $origin;
+    -moz-background-origin: $origin;
+    background-origin: $origin;
+    -moz-background-clip: $clip;
+    -webkit-background-clip: $clip;
+    background-clip: $clip;
+    background-attachment: $attachment;
+    background-image: url($image);
+  }
+}
+
+@mixin text($type:text,$size:1em,$align:left,$weight:normal,$style:normal,$decoration:none,$transform:none,$wordBreak:normal,$wordWrap:normal,$lineHeight:normal) {
+  @if $type == text or $type == link {
+    font-family: $defaultFont;
+    font-weight: 400;
+  }
+  @else if $type == header {
+    font-family: $defaultHeaderFont;
+    font-weight: 700;
+  }
+  @if $size != default {
+    font-size:$size;
+  }
+  text-align: $align;
+  font-style: $style;
+  text-decoration: $decoration;
+  text-transform: $transform;
+  word-break: $wordBreak;
+  word-wrap: $wordWrap;
+  line-height: $lineHeight;
+  //letter-spacing: 3px;
+  //text-shadow: 0 0 1px rgba(0,0,0,0.2);
+  //-webkit-font-smoothing: antialiased;
+  //-moz-font-smoothing: antialiased;
+  //font-smoothing: antialiased;
+  //-webkit-text-stroke: 0.1px
+}
+
+@mixin border($position:all,$size:1px,$type:solid,$color:$landraddningenPrimaryColor,$alpha:0) {
+  @if $position == all {
+    border: $size $type getColor($color,$alpha);
+  }
+  @else if $position == top {
+    border-top: $size $type getColor($color,$alpha);
+  }
+  @else if $position == right {
+    border-right: $size $type getColor($color,$alpha);
+  }
+  @else if $position == bottom {
+    border-bottom: $size $type getColor($color,$alpha);
+  }
+  @else if $position == left {
+    border-left: $size $type getColor($color,$alpha);
+  }
+}
+
+//@mixin placeholder($color:$defaultPlaceholderColor,$alpha:0) {
+//  &::-moz-placeholder { @content }
+//  &:-moz-placeholder { @content }
+//  &::-webkit-input-placeholder { @content }
+//  &:-ms-input-placeholder { @content }
+//  %placeholder {
+//    font-style: italic;
+//    @include color($type:text,$color:$color,$alpha:$alpha);
+//  }
+//}
+

@@ -1,0 +1,227 @@
+@media (min-width: 992px) {
+  body {
+    background-color: #191919;
+  }
+  body h1 {
+    font-size: 2em;
+  }
+  body h2 {
+    font-size: 1.8em;
+  }
+  body h3 {
+    font-size: 1.6em;
+  }
+  body h4 {
+    font-size: 1.4em;
+  }
+  body h5 {
+    font-size: 1.2em;
+  }
+  body h6 {
+    font-size: 1em;
+  }
+  body#homepageBody {
+    overflow: auto;
+  }
+  body #homepageContainer {
+    min-height: 600px;
+    background-color: transparent;
+    background-position: center top;
+    /* Gecko 1.9.2 (Firefox 3.6) */
+    /* Opera 9.5 */
+    /* Safari 3-4 */
+    background-repeat: no-repeat;
+    -webkit-background-origin: padding-box;
+    -moz-background-origin: padding-box;
+    background-origin: padding-box;
+    -moz-background-clip: border-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-image: url("../img/bakgrunder/bg_stan_2_ny-970x600-med_droppe.png");
+    margin: auto;
+    padding: 0;
+  }
+  body #homepageContainer #homepageContent {
+    margin-top: 0;
+  }
+  body #homepageContainer #homepageContent #homepageText {
+    font-family: "Gotham A", "Gotham B", Gotham, Georgia, serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: left;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: normal;
+    padding-top: 160px;
+    padding-bottom: 20px;
+  }
+  body #defaultContainer {
+    min-height: 400px;
+    background-color: transparent;
+    background-position: center top;
+    /* Gecko 1.9.2 (Firefox 3.6) */
+    /* Opera 9.5 */
+    /* Safari 3-4 */
+    background-repeat: no-repeat;
+    -webkit-background-origin: padding-box;
+    -moz-background-origin: padding-box;
+    background-origin: padding-box;
+    -moz-background-clip: border-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-image: url("../img/bakgrunder/bg_stan_2_ny-970x600.png");
+    margin: auto;
+    padding: 0;
+  }
+  body #mainContent, body .whiteopacity {
+    min-height: 350px;
+  }
+  body #puffar {
+    padding: 0 25px 0 0;
+  }
+  body header#mainHeader {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin: 0;
+  }
+  body header#mainHeader .navbar-header .navbar-brand {
+    padding: 0;
+  }
+  body header#mainHeader .navbar-header .navbar-brand #landraddningen_logo {
+    padding: 5px;
+    margin: 30px 0 30px 30px;
+  }
+  body header#mainHeader nav#mainNavbar ul#menu-primary-navigation {
+    font-family: "Gotham A", "Gotham B", Gotham, Georgia, serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: left;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: normal;
+    float: right;
+    padding: 25px 0 0 0;
+  }
+  body header#mainHeader nav#mainNavbar ul#menu-primary-navigation li a {
+    padding: 10px 4px 34px 4px;
+    font-family: "Gotham A", "Gotham B", Gotham, Georgia, serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: left;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: normal;
+    border: 0px;
+  }
+  body header#mainHeader nav#mainNavbar ul#menu-primary-navigation li.open .dropdown-menu {
+    padding: 2px;
+    display: block;
+    border: 0px;
+  }
+  body header#mainHeader nav#mainNavbar ul#menu-primary-navigation li.open .dropdown-menu:hover {
+    display: block;
+  }
+  body header#mainHeader nav#mainNavbar ul#menu-primary-navigation li .dropdown-menu {
+    font-family: "Gotham A", "Gotham B", Gotham, Georgia, serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: left;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: normal;
+  }
+  body header#mainHeader nav#mainNavbar ul#menu-primary-navigation li .dropdown-menu li a {
+    padding: 2px;
+  }
+  body #pageContent .newsPost img {
+    display: inline-block;
+  }
+  body #pageContent ul#newsArchive ul {
+    padding-left: 40px;
+  }
+  body #pageContent #downloadAsPDF #pdfContainer #pdfText {
+    padding-top: 60px;
+    padding-right: 40px;
+  }
+  body #pageContent .storyBox {
+    height: 380px;
+  }
+  body #pageContent .storyBox .storyImageContainer {
+    height: 120px;
+  }
+  body #pageContent .storyBox .storyImageContainer img,
+  body #pageContent .storyBox .storyImageContainer div.missingImg {
+    max-width: 240px;
+    max-height: 120px;
+  }
+  body #pageContent #storyImageContainer img {
+    margin-bottom: 20px;
+  }
+  body #seminarMenu {
+    float: right;
+  }
+  body .avatar {
+    margin-top: 0px;
+    margin-right: 20px;
+  }
+  body #contactpersonauthorinfo {
+    margin-left: 35%;
+  }
+  body .printfriendly img {
+    width: 50%;
+  }
+  body #puffar {
+    clear: left;
+  }
+  body #footer #laddaNerAppen .laddaNerAppenImg {
+    width: 24px;
+    height: 29px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+  }
+  body #footer #laddaNerAppen .laddaNerAppenImg.iPhone {
+    margin-left: 0;
+  }
+  body #footer #laddaNerAppen .laddaNerAppenImg.Android {
+    padding-top: 10px;
+  }
+  body #footer #laddaNerAppen .laddaNerAppenText {
+    display: inline;
+  }
+  body #footer #laddaNerAppen .laddaNerAppenText.iPhone {
+    padding: 0 5px;
+  }
+  body #footer #laddaNerAppen .laddaNerAppenText.Android {
+    padding: 0 5px;
+  }
+  body #footer #socialaMedier div {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  body #footer #socialaMedier div#Facebook {
+    margin-left: 12px;
+  }
+  body div#pageNav {
+    padding: 10px 100px;
+  }
+  body div#pageNav span.noMobile {
+    display: inline-block;
+  }
+}

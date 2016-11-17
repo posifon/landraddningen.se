@@ -1,0 +1,23 @@
+@charset "windows-1252";
+/**
+ * Created by:
+ *                  User:    Stellan Lindell
+ *                  Company: Elicit AB
+ *                  URL:     http://elicit.se
+ *                  Date:    ${DATE}
+ *                  Time:    ${TIME}
+ *
+ * Copyright © | Elicit AB - Effektiva IT-lösningar.™ | All rights reserved.
+ */
+
+@import "variables.scss";
+@import "functions.scss";
+@import "mixins.scss";
+
+//Starts with extra small screens and goes bigger
+@import "default.scss";
+@import "media-query-sm.scss";
+@import "media-query-md.scss";
+@import "media-query-lg.scss";
+@import "media-query-xl.scss";
+@import "fonts.scss";

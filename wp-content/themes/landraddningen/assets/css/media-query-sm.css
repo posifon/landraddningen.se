@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+  body #pageContent .storyBox {
+    height: 350px;
+    border: none;
+  }
+  body #pageContent .storyBox.rightBorder {
+    border-right: 1px solid #bed000;
+  }
+  body #pageContent .storyBox .storyImageContainer {
+    height: 90px;
+  }
+  body #pageContent .storyBox .storyImageContainer img,
+  body #pageContent .storyBox .storyImageContainer div.missingImg {
+    max-width: 180px;
+    max-height: 90px;
+    margin: auto;
+  }
+  body #contactpersonauthorinfo {
+    margin-left: 20%;
+  }
+  body #contactpersonauthorinfo {
+    margin-left: 25%;
+  }
+  body .printfriendly img {
+    width: 50%;
+  }
+}
